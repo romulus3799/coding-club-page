@@ -1,0 +1,73 @@
+body {
+	position: relative;
+    background: linear-gradient(white, #EAE5E1);
+}
+h1 {
+	text-align: center;
+	font-family: "Consolas";
+	font-size: 48pt;
+    color: #ED0086;
+}
+h2 {
+	text-align: center;
+	font-family: "Consolas";
+	font-size: 28pt;
+    color: #72CE9B;
+}
+p, input[type=button], #divQuiz {
+	font-size: 12pt;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    color: #6E6E6E;
+    padding-right: 20vw;
+}
+.markup {
+    color: #ED0086;
+}
+.markupper {
+    color: #ED0086;
+    font-weight: bold;
+}
+.markdown {
+    color: #6E6E6E;
+}
+#divText > p {
+	padding-left: 30vw;
+	padding-right: 30vw;
+    resize: none;
+}
+#divQuizPrompt, #divQuiz, #divQuizResult {
+	padding-top: 10vh;
+	padding-left: 20vw;
+}
+#divQuiz {
+    color: #ED0086;
+}
+label {
+    color: #067D45;
+}
+span {
+    color: red;
+}
+input[type=button] {
+    padding: 10px;
+    padding-left:20px;
+    padding-right:20px;
+    background-color: #067D45;
+    color: white;
+    border-style: none;
+}
+#divQuiz, #divQuizResult {
+	display: none;
+}
+#quizResult {
+    font-weight: bold;
+    color: #ED0086;
+}
+#quizSuggestion {
+    color: #0E76AD;
+}
+#divFooter {
+    display: none;
+    position: absolute;
+    bottom: 0;
+}

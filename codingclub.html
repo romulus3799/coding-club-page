@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coding Club</title>
+	<link rel="stylesheet" type="text/css" href="codingclub.css"/>
+	<script src="codingclub.js"></script>
+</head>
+<body>
+	<div id="divText">
+		<h1 id="heading"><i>Fremd Coding Club</i></h1>
+        <h2>Learn, Build, Collaborate</h2>
+		<p>Computer Science is one of the <b>fastest</b> growing fields in the world. <i>There are more CompSci-related jobs available than actual people qualified to fill those jobs.</i> Computer Science allows people to see <b>innovations</b> and <b>advances</b> in <span class='markup'>science</span>, <span class='markup'>engineering</span>, <span class='markup'>business</span>, <span class='markup'>entertainment</span>, and <span class='markup'>education</span>. Programmers solve deep, <b>multidimensional</b> problems in the world that require <span class='markup'>perspective</span> and <span class='markup'>inventiveness</span>. The <b>best</b> solutions in computing are derived from <span class='markup'>creativity</span> and <span class='markup'>imagination</span>.</p>
+        <p>The number of open jobs in this field is <b>constantly increasing</b> and showing no signs of slowing down. <i>We need the number of qualified people to increase at that same rate to meet those jobs</i>. This is why we started <span class='markupper'>Coding Club</span>. Our club welcomes students of <b>any</b> skill level, from those who've <i>never touched an editor in their life</i> to <i>veteran coders</i>. <span class='markupper'>Coding Club</span> is a <b>positive</b> and <b>friendly</b> environment to <span class='markup'>work on projects</span>, <span class='markup'>share ideas</span>, and <span class='markup'>collaborate</span>.</p>
+	</div>
+    
+    
+    
+	<div id="divQuizPrompt">
+		<p>Take this quick quiz to check your knowledge of computer science!</p>
+		<input type="button" id="btnTakeQuiz" value="Begin Quiz" onclick="displayQuiz()"/>
+	</div>
+	<div id="divQuiz">
+		<form id='question1'>
+			<label>Which of the following is the lowest level language?</label><br/><br/>
+			<input type="radio" name="q1" value="option1"/>C++<br/>
+			<input type="radio" name="q1" id="correct1" value="option2"/>Assembly<br/>
+			<input type="radio" name="q1" value="option3"/>SQL<br/>
+			<input type="radio" name="q1" value="option4"/>Java<br/>
+			<br/><br/>
+        </form>
+        <form id='question2'>
+            <label>An 8-bit game can only count up to level...</label><br/>
+            <img src='pacman256.jpg'/>'<br/>
+			<input type="radio" name="q2" value="option1"/>64<br/>
+			<input type="radio" name="q2" id="correct2" value="option2"/>255<br/>
+			<input type="radio" name="q2" value="option3"/>999<br/>
+			<input type="radio" name="q2" value="option4"/>127<br/>
+			<br/><br/>
+        </form>
+        <form id='question3'>
+            <label>To store several data together, you would use a(n)...</label><br/><br/>
+			<input type="radio" name="q3" value="option1"/>Float<br/>
+			<input type="radio" name="q3" value="option2"/>String<br/>
+			<input type="radio" name="q3" id="correct3" value="option3"/>Array<br/>
+			<input type="radio" name="q3" value="option4"/>Boolean<br/>
+			<br/><br/>
+        </form>
+        <form id='question4'>
+			<label>Which of these sorting algorithms is usually the fastest?</label><br/><br/>
+			<input type="radio" name="q4" id="correct4" value="option1"/>Quick Sort<br/>
+			<input type="radio" name="q4" value="option2"/>Merge Sort<br/>
+			<input type="radio" name="q4" value="option3"/>Bubble Sort<br/>
+			<input type="radio" name="q4" value="option4"/>Heap Sort<br/>
+			<br/><br/>
+        </form>
+        <form id='question5'>
+            <label>In which language is the following code snippet?<br/></label><br/>
+            <img src='pythonCode.jpg'/><br/>
+			<input type="radio" name="q5" value="option1"/>C++<br/>
+			<input type="radio" name="q5" value="option2"/>JavaScript<br/>
+			<input type="radio" name="q5" value="option3"/>COBOL<br/>
+			<input type="radio" name="q5" id="correct5" value="option4"/>Python<br/>
+			<br/><br/>
+        </form>
+        <form id='question6'>
+            <label>What is another name for half of a byte?</label><br/><br/>
+			<input type="radio" name="q6" value="option1"/>A bit<br/>
+			<input type="radio" name="q6" value="option2"/>A bin<br/>
+			<input type="radio" name="q6" id="correct6" value="option3"/>A nibble<br/>
+			<input type="radio" name="q6" value="option4"/>A minibyte<br/>
+			<br/><br/>
+        </form>
+			<input type="button" id="btnSubmitQuiz" value="Submit" onclick="submitQuiz()"/><span id='quizNotComplete'></span>
+		
+	</div>
+    <div id="divQuizResult">
+        <p id="quizResult"></p>
+        <p id="quizSuggestion"></p>
+    </div>
+</body>
+</html>
